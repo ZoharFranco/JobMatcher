@@ -1,0 +1,37 @@
+.questions {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    padding: 20px;
+}
+.coding-page h2 {
+    margin-bottom: 1rem;
+}
+
+.tasks {
+    margin: 5rem;
+    display: flex;
+    flex-wrap: wrap; /* Enable wrapping to multiple rows */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+    padding: 20px;
+    background: linear-gradient(135deg, rgba(230, 255, 255, 0), rgba(230, 255, 255, 0.09)); /* Light gradient */
+}
+
+.task {
+    flex: 1 1 200px; /* Flex-grow, flex-shrink, and minimum width */
+    max-width: 300px; /* Maximum width per item */
+    background: #ececf4;
+    color: #2b41ae;
+    padding: 15px 20px;
+    border-radius: 8px;
+    font-size: 1.6rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.task:hover {
+    transform: scale(1.1);
+}

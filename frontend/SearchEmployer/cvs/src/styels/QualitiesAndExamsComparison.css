@@ -1,0 +1,116 @@
+.comparison-page {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: left;
+    margin-bottom: 50px;
+    color: #343a40;
+}
+
+
+.circular-progress {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    position: relative;
+}
+
+.circular-chart {
+    transform: rotate(-90deg);
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 3.8;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.8;
+    stroke-linecap: round;
+    animation: progress-animation 1.5s ease-out forwards;
+}
+
+.percentage-label {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.match-section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.match-card {
+    background: #fff;
+    border-radius: 18px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 5px;
+    width: 70%; /* Increased width */
+    margin: 30px auto; /* Centered the cards horizontally */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
+}
+
+.match-card h2 {
+    text-align: left;
+    margin: 1rem;
+    color: #07213a;
+}
+
+.match-card ul {
+    list-style: none;
+    padding-left: 2rem;
+    padding-top: 0.2rem;
+}
+
+.match-card li {
+    font-size: 1.2em;
+    margin: 10px 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.match-card li svg {
+    margin-right: 20px;
+}
+
+.icon-success {
+    color: #28a745;
+}
+
+.icon-warning {
+    color: #ffc107;
+}
+
+.icon-fail {
+    color: #dc3545;
+}
+
+/* Hover Animation */
+.match-card:hover {
+    transform: translateY(-10px); /* Slightly lift the card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Intensify shadow */
+}
+
+
+@keyframes progress-animation {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}

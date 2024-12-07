@@ -1,0 +1,16 @@
+/* src/assets/results.css */
+.results {
+    margin: 20px;
+}
+
+.results h3 {
+    margin-top: 10px;
+}
+
+.results ul {
+    padding-left: 20px;
+}
+
+.results li {
+    margin-top: 10px;
+}

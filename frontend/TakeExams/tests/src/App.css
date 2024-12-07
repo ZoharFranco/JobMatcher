@@ -1,0 +1,52 @@
+body {
+    font-family: 'Calibri', sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Beautiful gradient from purple to blue */
+    margin: 0;
+    padding: 0;
+}
+
+#root {
+
+    margin: auto auto;
+    padding: 1rem;
+    text-align: center;
+}
+
+/* Overall application container */
+.app-container {
+    display: flex; /* To position Sidebar and Content together */
+    height: 100vh; /* Full viewport height */
+    background: linear-gradient(135deg, #e0eafc, #cfdef3); /* Light gradient background */
+}
+
+/* Sidebar takes space on the left */
+.sidebar {
+    width: 250px;
+}
+
+.content-container {
+    flex: 1; /* Take the remaining space after Sidebar */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 20px;
+    margin-left: 2rem;
+}
+
+
+@keyframes logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    a:nth-of-type(2) .logo {
+        animation: logo-spin infinite 20s linear;
+    }
+}
+
+

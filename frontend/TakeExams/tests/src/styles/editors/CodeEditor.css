@@ -1,0 +1,51 @@
+/* CodeEditor.css */
+
+/* Basic editor container with a gradient background */
+.code-editor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #f6f3fa, #0e3f91); /* Beautiful gradient from purple to blue */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    height: 350px; /* Fixed height for the editor */
+}
+
+/* CodeMirror styling */
+.code-editor {
+    width: 100%;
+    height: 400px; /* Flexible height */
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #1e1e1e; /* Dark background for code area */
+    border: 1px solid #333;
+}
+
+/* Footer with a button */
+.footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Run button styling */
+.run-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.run-button:hover {
+    background-color: #0056b3;
+}
+
+.run-button:active {
+    background-color: #004080;
+}

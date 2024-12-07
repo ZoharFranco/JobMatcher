@@ -1,0 +1,27 @@
+.interview-page {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 1.5rem;
+}
+
+.interview-header {
+    font-size: 1.5rem;
+    color: #4caf50;
+}
+
+.interview-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.interview-chat,
+.interview-code,
+.interview-video {
+    flex: 1;
+}
+
+.interview-chat {
+    border-left: 1px solid #ddd;
+    padding-left: 1rem;
+}

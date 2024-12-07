@@ -1,0 +1,135 @@
+/* ProfilePage.css */
+
+
+/* Profile Page Container */
+.profile-page {
+    flex: 1;
+    flex-direction: column;
+    display: flex;
+    background: rgba(255, 255, 255, 0.04);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 5rem;
+    flex-wrap: wrap; /* Enable wrapping to multiple rows */
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Align items horizontally */
+    align-items: center; /* Align items vertically */
+}
+
+/* Header Section */
+.profile-header {
+    margin-bottom: 10px;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #4e54c8;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-name {
+    font-size: 28px;
+    font-weight: bold;
+    margin-top: 15px;
+    color: white;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 24px;
+    color: white;
+}
+
+.qualities-grid,
+.test-scores-grid {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next row if needed */
+    justify-content: center; /* Aligns items horizontally */
+    gap: 20px; /* Space between items */
+}
+
+
+.quality-card {
+    background: linear-gradient(135deg, #eaf9f4, #bfa5f8);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 1rem;
+    color: white;
+}
+
+.quality-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.quality-icon {
+    font-size: 40px;
+    color: #4e54c8;
+    margin-bottom: 10px;
+}
+
+.quality-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.quality-score {
+    font-size: 16px;
+    color: #666;
+}
+
+
+.test-score-card {
+    background: linear-gradient(275deg, #eaf9f4, #a5acf8);
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.test-score-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.test-title {
+    font-size: 18px;
+    color: #333;
+}
+
+.test-score {
+    font-size: 20px;
+    font-weight: bold;
+    color: #4e54c8;
+}
+
+/* Courses List */
+.courses-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.course-item {
+    margin-bottom: 10px;
+}
+
+.course-link {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.course-link:hover {
+    color: #2d3aa6;
+}

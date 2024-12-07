@@ -1,0 +1,42 @@
+/* src/assets/jobSearch.css */
+.job-search {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+.job-search h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.job-search input {
+    font-size: 1rem;
+    padding: 12px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.job-search button {
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.job-search ul {
+    margin-top: 20px;
+}
+
+.job-search li {
+    background-color: #f9f9f9;
+    padding: 12px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.job-search li:hover {
+    background-color: #f1f1f1;
+    transform: translateY(-5px);
+}

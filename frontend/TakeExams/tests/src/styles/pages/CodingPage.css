@@ -1,0 +1,16 @@
+.coding-page {
+    padding: 2rem;
+    background-color: rgba(195, 237, 244, 0.32);
+    border: solid 2px white;
+    border-radius: 10%;
+    width: 100%;
+    min-width: 600px;
+}
+
+.coding-page h2 {
+    margin-bottom: 1rem;
+}
+
+.coding-page p {
+    margin-bottom: 2rem;
+}

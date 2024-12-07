@@ -1,0 +1,108 @@
+/* Container for the Comparison */
+.qualities-comparison-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Title */
+.qualities-title {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+/* Circle Progress Styles */
+.circle-container {
+    display: inline-block;
+    position: relative;
+}
+
+.circle-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+.circle-progress-container {
+    margin-bottom: 2rem;
+}
+
+.circle-progress-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #2c3e50;
+}
+
+/* Quality Cards Layout */
+.qualities-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.quality-card {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.quality-card:hover {
+    transform: translateY(-10px); /* Add a hover effect */
+}
+
+.quality-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.quality-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #3498db; /* Add a blue color to the title */
+}
+
+/* Icon Styles */
+.icon {
+    font-size: 1.5rem;
+}
+
+.pass {
+    color: #28a745; /* Green for positive */
+}
+
+.fail {
+    color: #e74c3c; /* Red for negative */
+}
+
+.neutral {
+    color: #ffcc00; /* Yellow for neutral (star) */
+}
+
+/* Match Score */
+.match-score {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-top: 1rem
+}
